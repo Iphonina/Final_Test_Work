@@ -52,11 +52,12 @@ void GetAndPrintNewArray(string[] array1, string[] array2, int num)
     Console.Write($"]");
 }
 
+
 int sizeArray = GetSizeFirstArray();
+int maxWordLength = 3;
+
 string[] firstArray = new string[sizeArray];
 FillArray(firstArray);
-
-int maxWordLength = 3;
 
 string[] newArray = new string[GetSizeNewArray(firstArray, maxWordLength)];
 GetAndPrintNewArray(firstArray, newArray, maxWordLength);
